@@ -16,9 +16,15 @@ export class DbzComponent{
     {
       name: 'Vegeta',
       power: 8500
+    },
+    {
+      name: 'Krillin',
+      power: 7500
     }
   ]
 
-  constructor() { }
+  public onNewCharacter(character: Character): void {
+    this.characters.push(character);
+  }
 
 }
