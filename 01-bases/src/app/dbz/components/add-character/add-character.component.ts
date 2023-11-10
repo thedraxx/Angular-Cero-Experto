@@ -17,7 +17,6 @@ export class AddCharacterComponent {
   };
 
   public emitCharacter(): void {
-    console.log(this.character);
     if (this.character.name.trim().length === 0) {
       return;
     }
@@ -25,7 +24,4 @@ export class AddCharacterComponent {
     this.character.name = '';
     this.character.power = 0;
   }
-
-  constructor() { }
-
 }
